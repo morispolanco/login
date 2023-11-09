@@ -13,13 +13,7 @@ username= __login__obj.get_username()
 
 if LOGGED_IN == True:
 
-   st.markdown("Your Streamlit Application Begins here!")
-   st.markdown(st.session_state)
-   st.write(username)
 
-
-# Configura el título de la página en el navegador
-st.set_page_config(page_title="LeybotGt", page_icon="📚")
 
 # Título de la aplicación
 st.title("LeybotGt")
