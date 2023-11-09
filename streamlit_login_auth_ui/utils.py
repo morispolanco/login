@@ -115,7 +115,7 @@ def check_unique_usr(username_sign_up: str):
     return True
 
 
-def register_new_usr(name_sign_up: str, email_sign_up: str, username_sign_up: str, password_sign_up: str) -> None:
+#def register_new_usr(name_sign_up: str, email_sign_up: str, username_sign_up: str, password_sign_up: str) -> None:
     """
     Saves the information of the new user in the _secret_auth.json file.
     """
