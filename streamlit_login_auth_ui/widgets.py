@@ -127,7 +127,7 @@ class __login__:
         st_lottie(lottie_json, width = self.width, height = self.height)
 
 
-    def sign_up_widget(self) -> None:
+   # def sign_up_widget(self) -> None:
         """
         Creates the sign-up widget and stores the user info in a secure way in the _secret_auth_.json file.
         """
