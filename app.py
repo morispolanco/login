@@ -20,7 +20,7 @@ if LOGGED_IN == True:
 
   # Título de la aplicación
   st.title("LeybotGt")
-  st.markdown("Esta aplicación responde preguntas relacionadas con la legislación de Guatemala.")
+  st.markdown("Esta aplicación responde preguntas o casos sobre con la legislación de Guatemala.")
   st.text("Por Moris Polanco")
   
   # Campo de entrada para la pregunta o caso
