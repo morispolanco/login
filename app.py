@@ -4,17 +4,12 @@ import json
 
 from streamlit_login_auth_ui.widgets import __login__
 
-__login__obj = __login__(auth_token="courier_auth_token",
-                         company_name="Shims",
-                         width=200, height=250,
-                         logout_button_name='Logout', hide_menu_bool=False,
-                         hide_footer_bool=False,
-                         lottie_url='https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json')
+# Configuración para simular un usuario ya logueado
+simulated_user_logged_in = True
 
-LOGGED_IN = __login__obj.build_login_ui()
-username = __login__obj.get_username()
-
-if LOGGED_IN == True:
+if simulated_user_logged_in:
+    # Se simula que el usuario ya ha iniciado sesión
+    
     # Título de la aplicación
     st.title("LeybotGt")
     st.markdown("Esta aplicación responde preguntas o casos sobre la legislación de Guatemala.")
@@ -50,3 +45,14 @@ if LOGGED_IN == True:
                 st.write("Respuesta:", respuesta)
             else:
                 st.error("Error al enviar la solicitud a la API")
+else:
+    # Muestra la sección de registro solo si el usuario no ha iniciado sesión
+    __login__obj = __login__(auth_token="courier_auth_token",
+                             company_name="Shims",
+                             width=200, height=250,
+                             logout_button_name='Logout', hide_menu_bool=False,
+                             hide_footer_bool=False,
+                             lottie_url='https://assets2.lottiefiles.com/packages/lf20_jcikwtux.json')
+
+    LOGGED_IN = __login__obj.build_login_ui()
+    username = __login__obj.get_username()
