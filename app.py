@@ -5,7 +5,7 @@ import json
 from streamlit_login_auth_ui.widgets import __login__
 
 # Configuración para simular un usuario ya logueado
-simulated_user_logged_in = False
+simulated_user_logged_in = True
 
 if simulated_user_logged_in:
     # Se simula que el usuario ya ha iniciado sesión
